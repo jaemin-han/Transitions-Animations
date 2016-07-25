@@ -1,0 +1,46 @@
+	body {
+		padding: 100px;
+	}
+
+	.jump {
+		width: 350px;
+		height: 350px;
+		border: 35px solid yellow;
+		background: orange;
+		z-index: ;
+	}
+
+	.jump h2 {
+		margin: 5%;
+		width: 50px;
+		color: green;
+		position: absolute;
+		
+
+	}
+	.box {
+		display: inline-block;
+		width: 350px;
+		height: 350px;
+		background: green;
+		transition: -webkit-transform 1.5s cubic-bezier(.96,-0.54,.03,1.46);
+		transition: -moz-transform 1.5s cubic-bezier(.96,-0.54,.03,1.46);
+	  	transition: transform 1.5s cubic-bezier(.96,-0.54,.03,1.46);
+	  	pointer-events: all;
+	  	z-index: ;
+	/*  'Pointer-event' - The CSS property pointer-events allows authors to control under what circumstances (if any) a particular graphic element can become the target of mouse events.*/
+	/* 	'Webkit: Chrome & Moz: Firefox' */
+	}
+
+	.box h1 {
+		margin: 30%;
+		width: 200px;
+		margin-top: 46%;
+		color: white;
+	}
+
+	.jump.clicked .box {
+		-webkit-transform: translate(600px, 50px) rotate(45deg);
+		transform: translate(600px, 50px) rotate(45deg);
+	}
+
